@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pick a image</title>
+</head>
+<body>
+    <form action="/upload/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <br>Pick a image(The default is square)</br>
+        <input type="file" name="filename">
+        <input type="submit">
+    </form>
+
+</body>
+</html>
